@@ -11,6 +11,16 @@ int main()
     std::cout << "INput a number of words: ";
     std::cin >> words_number;
 
+	// char **names = new char* [word_number];
+	// for (int i = 0; i < word_number; i++)
+	// {
+		// names[i] = new char[10];
+	// }
+	// for (int i = 0; i < word_number; i++)
+	// {
+		// delete [] names[i];//nums[i] - разыменовали 1й указатель на указатель
+	// }
+	// delete[] names;
     char names[words_number][10];
 
     read_from_file (names, words_number, name_of_file);
